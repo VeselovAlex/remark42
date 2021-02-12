@@ -17,7 +17,11 @@ export function useDropdown(disableClosing?: boolean) {
           return false;
         }
 
-        return !disableClosing && dropdownElement?.contains(evt.target as HTMLDivElement);
+        if (disableClosing) {
+          return true;
+        }
+
+        return dropdownElement?.contains(evt.target as HTMLDivElement);
       });
     }
 

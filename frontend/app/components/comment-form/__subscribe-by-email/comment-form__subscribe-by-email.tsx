@@ -84,7 +84,7 @@ const renderEmailPart = (
     </div>
     <Input
       ref={emailAddressRef}
-      mix="comment-form__subscribe-by-email__input"
+      className="comment-form__subscribe-by-email__input"
       placeholder={intl.formatMessage(messages.email)}
       value={emailAddress}
       onInput={handleChangeEmail}

@@ -1,0 +1,68 @@
+:root {
+  --color0: #0f172a;
+  --color8: #22201c;
+  --color7: #333;
+  --color22: #2d2d2c;
+  --color24: #313133;
+  --color23: #393734;
+  --color18: #383838;
+  --color19: #404040;
+  --color36: #505050;
+  --color34: #555;
+  --color37: #586069;
+  --color14: #6a6a6a;
+  --color10: #777;
+  --color13: #888;
+  --color11: #999;
+  --color32: #a6a6a6;
+  --color1: #aaa;
+  --color35: #d9d9d9;
+  --color20: #ddd;
+  --color46: rgba(27, 31, 35, 0.15);
+  --color45: rgba(0, 0, 0, 0.1);
+  --color41: #efefef;
+  --color5: #eee;
+  --color44: rgba(255, 255, 255, 0.3);
+  --color6: #fff;
+  --color3: #e2efef;
+  --color4: #edf6f7;
+  --color16: #e2e8f0;
+  --color21: #f1f5f9;
+  --color9: #0aa;
+  --color15: #099;
+  --color33: #06c5c5;
+  --color40: #9cdddb;
+  --color43: #b7dddd;
+  --color42: #c6efef;
+  --color48: rgba(37, 156, 154, 0.6);
+  --color47: rgba(37, 156, 154, 0.4);
+  --color12: #259e06;
+  --color25: #9a0000;
+  --color26: #ffd7d7;
+  --color27: #f98989;
+  --color28: #672323;
+  --color29: #0e7e9d;
+  --color30: #cc0606;
+  --color31: #cbd5e1;
+  --color38: #ef0000;
+
+  /* code-highlight */
+  --chroma-bg: rgba(0, 0, 0, 0.05);
+  --chroma-base: #586e75;
+  --chroma-c: #7d7d7d;
+  --chroma-01: #589000;
+  --chroma-02: #cb4b16;
+  --chroma-03: #268bd2;
+  --chroma-04: #2aa198;
+  --chroma-05: #859900;
+  --chroma-06: #d33682;
+  --chroma-07: #00aee2;
+
+  /* Named variables */
+  --text-color: #1f2937;
+  --secondary-text-color: #4b5563;
+  --primary-color: 37, 156, 154;
+  --white-color: 255, 255, 255;
+  --error-color: #b91c1c;
+  --error-background: #feecf0;
+}

@@ -1,7 +1,7 @@
 import { h, FunctionComponent } from 'preact';
 import classnames from 'classnames';
 
-import Input from 'components/input';
+import { Input } from 'components/input';
 import TextareaAutosize from 'components/textarea-autosize';
 
 import styles from './input-field.module.css';
@@ -33,18 +33,16 @@ const InputField: FunctionComponent<InputFieldProps> = ({
     {type === 'textarea' ? (
       <TextareaAutosize
         className={classnames(styles.textarea, {
-          [styles.inputError]: errorMessage,
           [`${permanentClassName}-input`]: permanentClassName,
         })}
         {...props}
       />
     ) : (
       <Input
-        permanentClassName={classnames({
-          [styles.inputError]: errorMessage,
+        className={classnames(styles.input, {
           [`${permanentClassName}-input`]: permanentClassName,
         })}
-        mix={styles.input}
+        invalid={!!errorMessage}
         {...props}
       />
     )}

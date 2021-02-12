@@ -250,7 +250,7 @@ const Auth: FunctionComponent = () => {
           <Button
             type="submit"
             kind="primary"
-            size="middle"
+            size="large"
             mix={styles.submit}
             title={isLoading ? 'Loading...' : buttonLabel}
             disabled={isLoading}

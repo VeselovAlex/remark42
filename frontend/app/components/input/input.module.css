@@ -1,0 +1,39 @@
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--color16);
+  border-radius: 4px;
+  margin: 0;
+  padding: 0 8px;
+  height: 36px;
+  font-size: 16px;
+  font-family: inherit;
+
+  &:hover {
+    border-color: var(--color31);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px var(--color47);
+    border-color: var(--color15);
+    outline: none;
+  }
+
+  &:disabled:hover {
+    background-color: var(--color21);
+    border-color: var(--color16);
+  }
+
+  &::placeholder {
+    color: var(--color31);
+  }
+}
+
+.invalid {
+  &,
+  &:hover,
+  &:focus {
+    border-color: var(--error-color);
+    box-shadow: 0 0 0 2px var(--error-background);
+  }
+}
