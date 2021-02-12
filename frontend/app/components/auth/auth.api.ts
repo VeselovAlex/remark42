@@ -37,14 +37,17 @@ export function oauthSigninActor() {
 
         return;
       }
+
       if (!window.navigator.onLine) {
         console.log('offline');
         return;
       }
+
       if (document.hidden) {
         console.log('hidden');
         return;
       }
+
       if (currentRequest) {
         console.log('request in progress');
       }

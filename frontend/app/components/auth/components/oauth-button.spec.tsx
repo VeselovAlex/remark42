@@ -28,8 +28,7 @@ describe('OAuth Button', () => {
   it('should have rigth `href`', () => {
     const container = shallow(<OAuthButton variant="full" provider="google" onClick={() => null} />);
 
-    console.log(container.find('a').props());
-    expect(container.find('a').prop('href')).toHaveBeenCalledWith(
+    expect(container.find('a').prop('href')).toBe(
       '/auth/google/login?from=http%3A%2F%2Flocalhost%2F%3FselfClose&site=remark'
     );
   });
