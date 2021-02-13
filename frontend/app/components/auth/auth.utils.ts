@@ -1,5 +1,6 @@
 import { MessageDescriptor } from 'react-intl';
 
+import { EMAIL_REGEXP } from 'common/constants';
 import { isJwtExpired } from 'utils/jwt';
 import { StaticStore } from 'common/static-store';
 import type { FormProvider, OAuthProvider } from 'common/types';
@@ -19,7 +20,6 @@ export function getProviders(): [OAuthProvider[], FormProvider[]] {
 }
 
 const MIN_LENGTH = 3;
-const EMAIL_REGEXP = /[^@]+@[^.]+\..+/;
 const USERNAME_REGEXP = /^[\p{L}\d_ ]+$/u;
 
 export function getUsernameInvalidReason(username: string): MessageDescriptor | null {

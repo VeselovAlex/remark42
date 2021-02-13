@@ -341,7 +341,7 @@ export const ConnectedRoot: FunctionComponent = () => {
   const intl = useIntl();
 
   return (
-    <div className={classnames(styles.root, b('root', {}, { theme: props.theme }))}>
+    <div className={classnames(styles.root, props.theme, b('root', {}, { theme: props.theme }))}>
       <Root {...props} {...actions} intl={intl} />
       <p className="root__copyright" role="contentinfo">
         <FormattedMessage

@@ -8,6 +8,7 @@
   height: 36px;
   font-size: 16px;
   font-family: inherit;
+  background-color: rgba(var(--color-white), 0.1);
 
   &:hover {
     border-color: var(--color31);
@@ -27,6 +28,10 @@
   &::placeholder {
     color: var(--color31);
   }
+}
+
+:global(.dark) .input {
+  border: 1px solid var(--color16);
 }
 
 .invalid {

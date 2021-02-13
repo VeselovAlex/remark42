@@ -26,6 +26,10 @@
   }
 }
 
+:global(.dark) .root {
+  border-color: rgba(var(--white-color), 0.2);
+}
+
 .name,
 .full {
   border-radius: 6px;
@@ -55,4 +59,8 @@
 
 .github {
   color: var(--x, #000);
+}
+
+:global(.dark) .github {
+  color: rgb(var(--white-color));
 }
