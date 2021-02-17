@@ -12,6 +12,7 @@ module.exports = {
         ignore: ['after-comment'],
       },
     ],
+    'selector-pseudo-class-no-unknown': [true, { ignorePseudoClasses: ['global'] }],
     'mavrin/stylelint-declaration-use-css-custom-properties': {
       cssDefinitions: ['color'],
       ignoreProperties: ['/^\\$/'],

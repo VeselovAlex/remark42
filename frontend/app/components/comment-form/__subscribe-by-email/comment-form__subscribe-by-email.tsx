@@ -234,13 +234,7 @@ export const SubscribeByEmailForm: FunctionComponent = () => {
     return (
       <div className={b('comment-form__subscribe-by-email', { mods: { subscribed: true } })}>
         {text}
-        <Button
-          kind="primary"
-          size="middle"
-          mix="comment-form__subscribe-by-email__button"
-          theme={theme}
-          onClick={handleUnsubscribe}
-        >
+        <Button kind="primary" size="middle" mix="comment-form__subscribe-by-email__button" onClick={handleUnsubscribe}>
           <FormattedMessage id="subscribeByEmail.unsubscribe" defaultMessage="Unsubscribe" />
         </Button>
       </div>
@@ -264,7 +258,6 @@ export const SubscribeByEmailForm: FunctionComponent = () => {
           kind="primary"
           size="middle"
           mix="comment-form__subscribe-by-email__button"
-          theme={theme}
           onClick={() => setStep(Step.Close)}
         >
           <FormattedMessage id="subscribeByEmail.close" defaultMessage="Close" />

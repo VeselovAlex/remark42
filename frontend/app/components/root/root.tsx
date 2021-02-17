@@ -180,14 +180,16 @@ export class Root extends Component<Props, State> {
   };
 
   onMessage(event: { data: string | object }) {
+    if (!event.data) {
+      return;
+    }
+
     try {
       const data = typeof event.data === 'string' ? JSON.parse(event.data) : event.data;
       if (data.theme && THEMES.includes(data.theme)) {
         this.props.setTheme(data.theme);
       }
-    } catch (e) {
-      console.error(e); // eslint-disable-line no-console
-    }
+    } catch (e) {}
   }
 
   onBlockedUsersShow = async () => {

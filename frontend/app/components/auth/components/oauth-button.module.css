@@ -53,6 +53,11 @@
   }
 }
 
+:global(.dark) .name,
+:global(.dark) .full {
+  color: var(--color35);
+}
+
 .full::after {
   content: attr(title);
 }

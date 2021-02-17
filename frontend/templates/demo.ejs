@@ -42,6 +42,8 @@
         border: 1px dashed #aaa;
         width: 35rem;
         max-width: 100%;
+        height: 200px;
+        overflow-y: auto;
       }
 
       .widgets__counter-widget {
@@ -73,7 +75,9 @@
       <div class="widgets">
         <div class="widget widgets__widget widgets__comments-widget">
           <a class="widget__link" href="/web/last-comments.html">Last comments widget page</a><br />
-          <iframe class="widget__frame widget__comments-frame" src="/web/last-comments.html" frameborder="0"></iframe>
+          <div class="widget__frame widget__comments-frame">
+            <div class="remark42__last-comments" data-max="50"></div>
+          </div>
         </div>
         <div class="widget widgets__widget widgets__counter-widget">
           <a class="widget__link" href="/web/counter.html">Counter widget page</a><br />
@@ -125,12 +129,8 @@
         site_id: 'remark',
         host: '<%= htmlWebpackPlugin.options.REMARK_URL %>',
         url: window.location.href,
-        components: ['embed', 'counter'],
-        // __colors__: {
-        //   "--color0": "red",
-        // },
-        theme: theme
-        // locale: "ru"
+        // components: ['embed', 'counter', 'last-comments'],
+        theme: theme,
       };
 
       (function (c, d) {
@@ -143,7 +143,7 @@
             s.type = 'module';
             e = '.mjs';
           }
-          
+
           s.async = true;
           s.defer = true;
           s.src = remark_config.host + '/web/' + c[i] + e;

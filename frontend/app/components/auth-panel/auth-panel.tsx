@@ -101,13 +101,13 @@ export class AuthPanel extends Component<Props, State> {
 
           {!isUserAnonymous && (
             <DropdownItem>
-              <Button theme={theme} onClick={() => requestDeletion().then(onSignOut)}>
+              <Button onClick={() => requestDeletion().then(onSignOut)}>
                 <FormattedMessage id="authPanel.request-to-delete-data" defaultMessage="Request my data removal" />
               </Button>
             </DropdownItem>
           )}
         </Dropdown>{' '}
-        <Button kind="link" theme={theme} onClick={onSignOut}>
+        <Button kind="link" onClick={onSignOut}>
           <FormattedMessage id="authPanel.logout" defaultMessage="Logout?" />
         </Button>
       </>

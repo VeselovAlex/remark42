@@ -185,7 +185,6 @@ export class Dropdown extends Component<Props, State> {
           aria-haspopup="listbox"
           aria-expanded={isActive && 'true'}
           onClick={this.onTitleClick}
-          theme={theme}
           mix={['dropdown__title', titleClass]}
           kind="link"
           disabled={disabled}

@@ -1,9 +1,14 @@
-.button_theme_dark.button_kind_secondary {
-  background: var(--color8);
+.dark .button_kind_primary {
+  background-color: var(--color15);
   color: var(--color20);
 }
 
-.button_theme_dark.button_kind_link {
+.dark .button_kind_secondary {
+  background-color: var(--color8);
+  color: var(--color20);
+}
+
+.dark .button_kind_link {
   &:disabled,
   &:hover:disabled {
     color: var(--color6);

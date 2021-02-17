@@ -115,8 +115,7 @@
     /* stylelint-disable-next-line mavrin/stylelint-declaration-use-css-custom-properties */
     color: #4b5563;
     text-transform: uppercase;
-    /* stylelint-disable-next-line mavrin/stylelint-declaration-use-css-custom-properties */
-    background: #fff;
+    background-color: rgb(var(--white-color));
   }
 }
 
@@ -127,7 +126,7 @@
 
   &::after {
     color: var(--color35);
-    background: var(--color22);
+    background-color: var(--color8);
   }
 }
 
@@ -187,12 +186,12 @@
 }
 
 :global(.dark) .providerName {
-  color: var(--color16);
+  color: var(--color32);
 }
 
 .radio:checked ~ .providerName {
   /* stylelint-disable-next-line mavrin/stylelint-declaration-use-css-custom-properties */
-  color: rgb(27, 184, 174);
+  color: rgb(var(--primary-color));
   /* stylelint-disable-next-line mavrin/stylelint-declaration-use-css-custom-properties */
   background-color: rgba(27, 184, 174, 0.1);
   border-radius: 2px;
@@ -200,6 +199,7 @@
 
 :global(.dark) .radio:checked ~ .providerName {
   color: rgb(var(--white-color));
+  background-color: rgba(var(--primary-color), 0.4);
 }
 
 .honeypot {

@@ -514,7 +514,6 @@ export class CommentForm extends Component<CommentFormProps, CommentFormState> {
                 {!simpleView && (
                   <Button
                     kind="secondary"
-                    theme={theme}
                     size="large"
                     mix="comment-form__button"
                     disabled={isDisabled}
